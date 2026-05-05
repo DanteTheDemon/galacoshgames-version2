@@ -1,7 +1,7 @@
 # Galacosh Games - University Final Project Documentation
 
 ## 1. Project Introduction & Business Concept
-**Galacosh Games** is an independent game studio born out of a desire to break away from dark, gritty realism in modern gaming. We specialize in crafting vibrant, high-energy, and playfully challenging experiences that evoke the joy of Saturday morning cartoons. Our target audience is indie gamers aged 16–35 who appreciate striking art styles, tight platforming controls, and high replay value. Our flagship title, *No Safe Tile*, represents this ethos perfectly.
+**Galacosh Games** is an independent game studio crafting vibrant, energetic, and playful experiences. Our story began in the quiet city of Bayburt. We believe games are more than just pixels on a screen—they are dynamic, colorful worlds that bring people together and spark genuine joy. Our flagship title, *No Safe Tile*, represents this ethos perfectly.
 
 **Architecture Justification:**
 The university guidelines initially requested a WordPress installation. However, we opted for a **hand-coded static site architecture** (HTML5, CSS3, Vanilla JS) deployed on a static host (like GitHub Pages/Cloudflare Pages) for several crucial reasons:
@@ -15,12 +15,12 @@ The university guidelines initially requested a WordPress installation. However,
 The UI/UX design is built to reflect the "Jolly Indie Game Studio" brand—energetic, playful, and professional.
 
 ### Color Palette
-- **Background (`#fdfbf7`):** A warm off-white. It reduces eye strain compared to pure white and gives a softer, more inviting canvas.
-- **Text (`#2b2d42`):** A dark slate gray to ensure high legibility and strong contrast against the light background.
-- **Primary Action (`#06d6a0`):** Emerald Green. Used for primary buttons and hover states to convey positive action and energy.
-- **Accent 1 (`#00b4d8`):** Bright Turquoise. Used for secondary highlights and background shapes.
+- **Background:** Instead of a flat color, we use a custom background image (`images/galacoshlight.png`) to give the site a distinct, vibrant identity.
+- **Text (`#2b2d42`):** A dark slate gray to ensure high legibility and strong contrast.
+- **Primary Action (`#2b2d42` & `#05b889`):** Primary elements use the dark slate gray (`#2b2d42`) and transition to a vibrant Emerald Green (`#05b889`) on hover to convey positive action and energy.
+- **Accent 1 (`#2b2d42`):** Dark Slate. Used for secondary highlights and maintaining a professional, grounded look.
 - **Accent 2 (`#ffd166`):** Golden Yellow. Used to draw attention and add a "jolly" pop of color.
-- **Accent 3 (`#ff9f1c`):** Tangerine Orange. Used for critical "call to action" buttons (like "Send Message" or "Learn More").
+- **Accent 3 (`#e7bc80`):** Soft Golden Orange. Used for critical "call to action" buttons (like "Send Message" or "Learn More") with a softer, more inviting tone.
 
 ### Typography
 - **Headings (`Rubik`, sans-serif):** A geometric, slightly rounded sans-serif font provided by Google Fonts. It feels modern but retains a playful, bouncy character.
