@@ -5,7 +5,7 @@ const devlogPosts = [
     id: 1,
     title: "Alpha Release: No Safe Tile is finally playable!",
     excerpt: "After months of hard work and countless coffees, we are thrilled to announce that the first playable Alpha of 'No Safe Tile' is available to our playtesters. Here's a breakdown of the new mechanics.",
-    content: "We added new enemy AI, revamped the movement system, and completely overhauled the lighting. Stay tuned for more updates as we approach the beta milestone.",
+    content: "We added new enemy AI, revamped the movement system, and completely overhauled the lighting. Stay tuned for more updates as we approach the beta milestone.<br><br><b>If you've tried the alpha version, please share your feedback with us:</b><br><br><a href='https://docs.google.com/forms/d/e/1FAIpQLSeNgdi70N0mLMNOeu_N4h-yA0QuB0z3ySvpCvL3wtr-Onl5tQ/viewform?usp=header' target='_blank' rel='noopener noreferrer' class='btn btn-primary'>Send Feedback</a>",
     date: "May 02, 2026",
     author: "Emir, Founder",
     image: "images/content.png"
@@ -23,7 +23,7 @@ const devlogPosts = [
     id: 3,
     title: "The Sound of Galacosh: Powering Our Games with Suno AI",
     excerpt: "A behind-the-scenes look at how every track in the Galacosh Games universe is composed using Suno AI..",
-    content: "As a small indie team, resource management is just as important as creativity. By integrating Suno into our audio pipeline, we are able to produce vibrant, studio-quality soundtracks that perfectly match the fast-paced energy of our games. This post explains our creative prompt engineering process, how we match AI-generated beats to the gameplay of No Safe Tile, and why embracing AI tools allows us to focus entirely on building better gaming experiences.",
+    content: "As a small indie team, resource management is just as important as creativity. By integrating Suno into our audio pipeline, we are able to produce vibrant, studio-quality soundtracks that perfectly match the fast-paced energy of our games. This post explains our creative prompt engineering process, how we match AI-generated beats to the gameplay of No Safe Tile, and why embracing AI tools allows us to focus entirely on building better gaming experiences.<br><br><a href='https://suno.com/playlist/70d1e8ee-4e53-4f92-9c7d-942fe8f7df36' target='_blank' rel='noopener noreferrer' class='btn btn-primary'>Listen to the No Safe Tile Suno album now!</a>",
     date: "March 28, 2026",
     author: "Emir, Founder",
     image: "images/suno.png"
