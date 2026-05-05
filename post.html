@@ -1,18 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Devlog Post | Galacosh Games</title>
-    
+
     <!-- SEO & Meta Tags -->
     <meta name="description" content="Read the latest detailed update from the developers at Galacosh Games.">
-    
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&family=Rubik:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&family=Rubik:wght@400;600;700;800&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
 
     <!-- Header -->
@@ -37,32 +41,39 @@
     <main>
         <!-- Single Post Content Area -->
         <article class="section container">
-            
-            <a href="devlog.html" style="display: inline-block; margin-bottom: 2rem; font-weight: 600;">← Back to Devlog</a>
+
+            <a href="devlog.html" style="display: inline-block; margin-bottom: 2rem; font-weight: 600;">← Back to
+                Devlog</a>
 
             <div id="single-post-container">
                 <!-- If JavaScript is disabled or fails, we show a fallback static template -->
                 <div class="post-header">
                     <h1>Alpha Release: No Safe Tile is finally playable!</h1>
-                    <div class="post-meta">May 02, 2026 | By Alex, Lead Dev</div>
+                    <div class="post-meta">May 02, 2026 | By Emir Karabulutoğlu</div>
                 </div>
-                
-                <img src="https://images.unsplash.com/photo-1550745165-9bc0b252726f?auto=format&fit=crop&w=1200&q=80" alt="Post Header" class="post-hero-image">
-                
+
+                <img src="https://images.unsplash.com/photo-1550745165-9bc0b252726f?auto=format&fit=crop&w=1200&q=80"
+                    alt="Post Header" class="post-hero-image">
+
                 <div class="post-content">
                     <p class="lead" style="font-size: 1.3rem; font-weight: 600; margin-bottom: 2rem;">
-                        After months of hard work and countless coffees, we are thrilled to announce that the first playable Alpha of 'No Safe Tile' is available to our playtesters.
+                        After months of hard work and countless coffees, we are thrilled to announce that the first
+                        playable Alpha of 'No Safe Tile' is available to our playtesters.
                     </p>
-                    
+
                     <h2>New Enemy AI</h2>
-                    <p>We realized our main protagonist wasn't standing out against the background. We focused on silhouette readability and high contrast color palettes to ensure the player never loses track of the character in chaotic levels.</p>
-                    
+                    <p>We realized our main protagonist wasn't standing out against the background. We focused on
+                        silhouette readability and high contrast color palettes to ensure the player never loses track
+                        of the character in chaotic levels.</p>
+
                     <h2>Lighting Overhaul</h2>
-                    <p>By eliminating heavy frameworks like React, we achieved a perfect 100 on Lighthouse. This post explains our architecture choices.</p>
-                    
+                    <p>By eliminating heavy frameworks like React, we achieved a perfect 100 on Lighthouse. This post
+                        explains our architecture choices.</p>
+
                     <div style="margin-top: 4rem; padding-top: 2rem; border-top: 2px solid #eee;">
-                        <h3>Share this post</h3>
-                        <a href="#" class="btn btn-primary" style="padding: 0.5rem 1rem; font-size: 0.9rem;">Share on Twitter</a>
+                        <h3>Contact us regarding this blog.</h3>
+                        <a href="contact.html" class="btn btn-primary"
+                            style="padding: 0.5rem 1rem; font-size: 0.9rem;">Contact Us</a>
                     </div>
                 </div>
             </div>
@@ -92,8 +103,10 @@
                     <h3 class="footer-heading">Connect</h3>
                     <ul class="footer-links">
                         <li><a href="contact.html">Contact Form</a></li>
-                        <li><a href="https://www.instagram.com/emirkrbltgl/?hl=tr" target="_blank" rel="noopener noreferrer">Instagram</a></li>
-                        <li><a href="https://discord.com/invite/galacosh" target="_blank" rel="noopener noreferrer">Discord</a></li>
+                        <li><a href="https://www.instagram.com/emirkrbltgl/?hl=tr" target="_blank"
+                                rel="noopener noreferrer">Instagram</a></li>
+                        <li><a href="https://discord.com/invite/galacosh" target="_blank"
+                                rel="noopener noreferrer">Discord</a></li>
                     </ul>
                 </div>
             </div>
@@ -105,21 +118,21 @@
 
     <script src="blog-data.js"></script>
     <script src="main.js"></script>
-    
+
     <!-- Inline JS to handle dynamic population based on URL ?id= param -->
     <script>
         document.addEventListener('DOMContentLoaded', () => {
             const urlParams = new URLSearchParams(window.location.search);
             const postId = parseInt(urlParams.get('id'));
-            
+
             if (postId && typeof devlogPosts !== 'undefined') {
                 const post = devlogPosts.find(p => p.id === postId);
                 if (post) {
                     const container = document.getElementById('single-post-container');
-                    
+
                     // Update document title for SEO
                     document.title = post.title + " | Galacosh Games";
-                    
+
                     // Inject real data
                     container.innerHTML = `
                         <div class="post-header">
@@ -136,8 +149,9 @@
                             <p>${post.content}</p>
                             
                             <div style="margin-top: 4rem; padding-top: 2rem; border-top: 2px solid #eee;">
-                                <h3>Share this post</h3>
-                                <button class="btn btn-primary" style="padding: 0.5rem 1rem; font-size: 0.9rem;" onclick="alert('Share functionality mocked for static site!')">Share to Social</button>
+                                <h3>Contact us regarding this post.</h3>
+                                <a href="contact.html" class="btn btn-primary"
+                                    style="padding: 0.5rem 1rem; font-size: 0.9rem;">Contact Us</a>
                             </div>
                         </div>
                     `;
@@ -152,4 +166,5 @@
         });
     </script>
 </body>
+
 </html>
