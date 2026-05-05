@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galacosh Games | Turkish Indie Game Studio</title>
+
+    <!-- SEO & Meta Tags -->
+    <meta name="description"
+        content="Galacosh Games is an independent game studio crafting vibrant, energetic, and playful experiences. Creators of 'No Safe Tile'.">
+    <meta name="keywords" content="indie games, game studio, Galacosh Games, No Safe Tile, indie developer">
+    <meta name="author" content="Galacosh Games">
+
+    <!-- Open Graph for Social Media -->
+    <meta property="og:title" content="Galacosh Games | Turkish Indie Game Studio">
+    <meta property="og:description" content="Discover vibrant and energetic games from an independent studio.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://galacoshgames.com/">
+
+    <!-- Google Fonts: Rubik (Headings) & Quicksand (Body) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&family=Rubik:wght@400;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <!-- Header & Navigation -->
+    <header class="site-header">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                <span class="logo-icon"><img src="images/solo2.png" width="30" height="30"></span> Galacosh Games
+            </a>
+
+            <button class="mobile-menu-btn" aria-label="Toggle Navigation">☰</button>
+
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="about.html">Studio</a></li>
+                    <li><a href="games.html">Games</a></li>
+                    <li><a href="devlog.html">Devlog</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero container">
+
+            <div class="hero-content">
+                <h1>Crafting Vibrant Worlds & Turkish Adventures.</h1>
+                <p><b>Galacosh Games is an independent game studio crafting vibrant, energetic, and playful experiences.
+
+                        Our story began in the quiet city of Bayburt. We believe games are more than just pixels on a
+                        screen—they are dynamic, colorful worlds that bring people together and spark genuine joy.</b>
+                </p>
+                <a href="games.html" class="btn btn-primary">Explore Our Games</a>
+            </div>
+
+            <div class="hero-graphics">
+                <img src="images/contentimage.png" alt="Galacosh Games Dark" class="hero-image">
+            </div>
+        </section>
+
+        <!-- Featured Game Section -->
+        <section class="container">
+            <div class="game-highlight">
+                <div class="game-highlight-text">
+                    <h2 class="text-accent">Now in Alpha</h2>
+                    <h1>No Safe Tile</h1>
+                    <p>No Safe Tile blends the strategic depth of chess with the asymmetric rules of nature on a single
+                        grid. In this mind-bending puzzle game, your goal is to build a perfectly peaceful ecosystem.
+                        Your deceptively simple task is to strategically place animals and terrain elements so that no
+                        creature falls within a predator's range, herbivores stay fed, and all environmental
+                        restrictions are completely respected.</p>
+                    <br>
+                    <a href="game-details.html?id=no-safe-tile" class="btn btn-accent">Learn More</a>
+                </div>
+                <div>
+                    <img src="images/content.png" alt="No Safe Tile gameplay concept" class="game-highlight-img">
+                </div>
+            </div>
+        </section>
+
+        <!-- Recent Devlog Posts -->
+        <section class="section container">
+            <div class="text-center" style="margin-bottom: 3rem;">
+                <h2 class="text-primary">Latest Updates</h2>
+                <p>Read about our development process and behind-the-scenes magic.</p>
+            </div>
+
+            <div class="grid-3" id="recent-posts-grid">
+            </div>
+
+            <div class="text-center" style="margin-top: 3rem;">
+                <a href="devlog.html" class="btn btn-primary">View Full Devlog</a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <h2 class="logo footer-logo"><span class="logo-icon"><img src="images/solo2.png" width="30"
+                                height="30"></span> Galacosh Games</h2>
+                    <p class="footer-text">Crafting vibrant, high-energy games since 2026. Hand-coded with passion.</p>
+                </div>
+                <div>
+                    <h3 class="footer-heading">Explore</h3>
+                    <ul class="footer-links">
+                        <li><a href="games.html">Games</a></li>
+                        <li><a href="devlog.html">Devlog</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="footer-heading">Connect</h3>
+                    <ul class="footer-links">
+                        <li><a href="contact.html">Contact Form</a></li>
+                        <li><a href="https://www.instagram.com/emirkrbltgl/?hl=tr" target="_blank"
+                                rel="noopener noreferrer">Instagram</a></li>
+                        <li><a href="https://discord.com/invite/galacosh" target="_blank"
+                                rel="noopener noreferrer">Discord</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Galacosh Games. All rights reserved. University Final Project.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <!-- Load data first, then the logic -->
+    <script src="blog-data.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Details | Galacosh Games</title>
+
+    <!-- SEO & Meta Tags -->
+    <meta name="description" content="Learn more about this game from Galacosh Games.">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&family=Rubik:wght@400;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="site-header">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                <span class="logo-icon"><img src="images/solo2.png" width="30" height="30"></span> Galacosh Games
+            </a>
+            <button class="mobile-menu-btn" aria-label="Toggle Navigation">☰</button>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">Studio</a></li>
+                    <li><a href="games.html" class="active">Games</a></li>
+                    <li><a href="devlog.html">Devlog</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Single Game Content Area -->
+        <article class="section container">
+
+            <a href="games.html" style="display: inline-block; margin-bottom: 2rem; font-weight: 600;">← Back to
+                Games</a>
+
+            <div id="single-game-container">
+                <!-- Fallback content if JS fails -->
+                <div class="post-header">
+                    <h1>Game Title</h1>
+                    <div class="post-meta">Status: Loading... | Genre: Loading...</div>
+                </div>
+
+                <div class="post-content">
+                    <p class="lead">Loading game details...</p>
+                </div>
+            </div>
+
+        </article>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <h2 class="logo footer-logo"><span class="logo-icon"><img src="images/solo2.png" width="30"
+                                height="30"></span> Galacosh Games</h2>
+                    <p class="footer-text">Crafting vibrant, high-energy games since 2026.</p>
+                </div>
+                <div>
+                    <h3 class="footer-heading">Explore</h3>
+                    <ul class="footer-links">
+                        <li><a href="games.html">Games</a></li>
+                        <li><a href="devlog.html">Devlog</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="footer-heading">Connect</h3>
+                    <ul class="footer-links">
+                        <li><a href="contact.html">Contact Form</a></li>
+                        <li><a href="https://www.instagram.com/emirkrbltgl/?hl=tr" target="_blank"
+                                rel="noopener noreferrer">Instagram</a></li>
+                        <li><a href="https://discord.com/invite/galacosh" target="_blank"
+                                rel="noopener noreferrer">Discord</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Galacosh Games. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="games-data.js"></script>
+    <script src="main.js"></script>
+
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const urlParams = new URLSearchParams(window.location.search);
+            const gameId = urlParams.get('id');
+
+            if (gameId && typeof gamesData !== 'undefined') {
+                const game = gamesData.find(g => g.id === gameId);
+                if (game) {
+                    const container = document.getElementById('single-game-container');
+
+                    // Update document title for SEO
+                    document.title = game.title + " | Galacosh Games";
+
+                    // Build features list
+                    let featuresHtml = '<ul>';
+                    game.features.forEach(feature => {
+                        featuresHtml += '<li>' + feature + '</li>';
+                    });
+                    featuresHtml += '</ul>';
+
+                    // Inject real data
+                    container.innerHTML = `
+                        <div class="post-header">
+                            <h1>${game.title}</h1>
+                            <div class="post-meta">Status: ${game.status} | Genre: ${game.genre}</div>
+                        </div>
+                        
+                        <img src="${game.image}" alt="${game.title}" class="post-hero-image">
+                        
+                        <div class="post-content">
+                            <p class="lead" style="font-size: 1.3rem; font-weight: 600; margin-bottom: 2rem;">
+                                ${game.description}
+                            </p>
+                            
+                            <h2>Key Features</h2>
+                            ${featuresHtml}
+                            
+                            <div style="margin-top: 4rem; padding-top: 2rem; border-top: 2px solid #eee;">
+                                <a href="contact.html" class="btn btn-primary">Inquire About This Game</a>
+                            </div>
+                        </div>
+                    `;
+                } else {
+
+                    window.location.href = '404.html';
+                }
+            } else {
+
+                window.location.href = '404.html';
+            }
+        });
+    </script>
+</body>
+
+</html>

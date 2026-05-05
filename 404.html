@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Not Found | Galacosh Games</title>
+
+    <!-- SEO & Meta Tags -->
+    <meta name="description" content="404 Error - The page you are looking for does not exist.">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&family=Rubik:wght@400;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+
+    <style>
+        .error-container {
+            min-height: 60vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            position: relative;
+        }
+
+        .error-code {
+            font-size: 8rem;
+            font-family: var(--font-heading);
+            color: var(--color-primary);
+            line-height: 1;
+            margin-bottom: 0.5rem;
+            text-shadow: 4px 4px 0px rgba(6, 214, 160, 0.2);
+        }
+
+        .error-title {
+            font-size: 2.5rem;
+            color: var(--color-text);
+            margin-bottom: 1.5rem;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="site-header">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                <span class="logo-icon"><img src="/images/solo2.png" width="30" height="30"></span> Galacosh Games
+            </a>
+            <button class="mobile-menu-btn" aria-label="Toggle Navigation">☰</button>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">Studio</a></li>
+                    <li><a href="games.html">Games</a></li>
+                    <li><a href="devlog.html">Devlog</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="container error-container">
+            <div class="shape shape-1" style="background: var(--color-accent-3); right: 10%; top: 20%;"></div>
+
+            <div style="z-index: 2;">
+                <div class="error-code">404</div>
+                <h1 class="error-title">Level Not Found</h1>
+                <p style="font-size: 1.2rem; max-width: 500px; margin: 0 auto 3rem; color: #555;">
+                    It looks like you've glitched out of bounds! The page you are looking for has been deleted, moved,
+                    or never existed in the first place.
+                </p>
+
+                <div style="display: flex; gap: 1rem; justify-content: center;">
+                    <a href="index.html" class="btn btn-primary">Return to Base</a>
+                    <a href="games.html" class="btn btn-accent">Play a Game Instead</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <h2 class="logo footer-logo"><span class="logo-icon"><img src="/images/solo2.png" width="30"
+                                height="30"></span> Galacosh Games</h2>
+                    <p class="footer-text">Crafting vibrant, high-energy games since 2026.</p>
+                </div>
+                <div>
+                    <h3 class="footer-heading">Explore</h3>
+                    <ul class="footer-links">
+                        <li><a href="games.html">Games</a></li>
+                        <li><a href="devlog.html">Devlog</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="footer-heading">Connect</h3>
+                    <ul class="footer-links">
+                        <li><a href="contact.html">Contact Form</a></li>
+                        <li><a href="https://www.instagram.com/emirkrbltgl/?hl=tr" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+                        <li><a href="https://discord.com/invite/galacosh" target="_blank"
+                                rel="noopener noreferrer">Discord</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Galacosh Games. All rights reserved. University Final Project.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+
+</html>

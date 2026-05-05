@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Galacosh Games</title>
+
+    <!-- SEO & Meta Tags -->
+    <meta name="description"
+        content="Get in touch with the Galacosh Games team. We'd love to hear from you regarding playtesting, press inquiries, or just to say hello.">
+    <meta name="keywords" content="contact Galacosh Games, indie game support, game dev contact">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&family=Rubik:wght@400;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="site-header">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                <span class="logo-icon"><img src="/images/solo2.png" width="30" height="30"></span> Galacosh Games
+            </a>
+            <button class="mobile-menu-btn" aria-label="Toggle Navigation">☰</button>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">Studio</a></li>
+                    <li><a href="games.html">Games</a></li>
+                    <li><a href="devlog.html">Devlog</a></li>
+                    <li><a href="contact.html" class="active">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="section container">
+            <div class="contact-container">
+
+                <!-- Contact Info -->
+                <div class="contact-info">
+                    <h1 class="text-primary" style="margin-bottom: 1rem;">Let's Talk!</h1>
+                    <p style="font-size: 1.2rem; margin-bottom: 2rem;">Whether you're a player with feedback, a press
+                        member wanting a key, or just want to chat about game design, we're all ears.</p>
+
+                    <div style="margin-bottom: 2rem;">
+                        <h3 class="text-accent">Email Us Directly</h3>
+                        <p>galacoshgames@galacoshgames.com</p>
+                    </div>
+
+                    <div>
+                        <h3 class="text-accent">Join the Community</h3>
+                        <a href="#" class="btn btn-primary" style="margin-top: 1rem;">Join our Discord</a>
+                    </div>
+                </div>
+
+                <!-- Contact Form (Simulated via main.js) -->
+                <div class="card" style="background-color: white;">
+                    <h2 style="margin-bottom: 2rem;">Send a Message</h2>
+
+                    <form action="https://api.web3forms.com/submit" method="POST" id="contact-form" novalidate>
+                        <input type="hidden" name="access_key" value="b8a73127-ce8f-4b66-9f2a-86dd5c4aae2c">
+
+                        <div class="form-group">
+                            <label for="name" class="form-label">Your Name</label>
+                            <input type="text" id="name" name="name" class="form-control" placeholder="Jane Doe"
+                                required>
+                            <div class="form-error" id="name-error"></div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email" class="form-label">Email Address</label>
+                            <input type="email" id="email" name="email" class="form-control"
+                                placeholder="jane@example.com" required>
+                            <div class="form-error" id="email-error"></div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="subject" class="form-label">Subject (Optional)</label>
+                            <select id="subject" name="subject" class="form-control">
+                                <option value="general">General Inquiry</option>
+                                <option value="support">Game Support</option>
+                                <option value="press">Press / Media</option>
+                                <option value="playtest">Playtesting</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message" class="form-label">Message</label>
+                            <textarea id="message" name="message" class="form-control" placeholder="How can we help?"
+                                required></textarea>
+                            <div class="form-error" id="message-error"></div>
+                        </div>
+
+                        <div style="margin-top: 2rem;">
+                            <button type="submit" class="btn btn-accent" style="width: 100%;">Send Message</button>
+                            <div class="loader" id="form-loader"></div>
+                        </div>
+
+                        <div id="form-feedback"></div>
+                    </form>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <h2 class="logo footer-logo"><span class="logo-icon"><img src="/images/solo2.png" width="30"
+                                height="30"></span> Galacosh Games</h2>
+                    <p class="footer-text">Crafting vibrant, high-energy games since 2026.</p>
+                </div>
+                <div>
+                    <h3 class="footer-heading">Explore</h3>
+                    <ul class="footer-links">
+                        <li><a href="games.html">Games</a></li>
+                        <li><a href="devlog.html">Devlog</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="footer-heading">Connect</h3>
+                    <ul class="footer-links">
+                        <li><a href="contact.html">Contact Form</a></li>
+                        <li><a href="https://www.instagram.com/emirkrbltgl/?hl=tr" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+                        <li><a href="https://discord.com/invite/galacosh" target="_blank"
+                                rel="noopener noreferrer">Discord</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Galacosh Games. All rights reserved. University Final Project.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
